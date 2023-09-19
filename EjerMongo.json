@@ -1,0 +1,142 @@
+
+    {
+      _id: ObjectId("64c1d3e75de2da20fbe39505"),
+      username: 'user4',
+      age: 45,
+      email: 'user4@example.com'
+    },
+    {
+      _id: ObjectId("64c1d3f35de2da20fbe39506"),
+      username: 'user4',
+      age: 45,
+      email: 'user4@example.com'
+    }
+  ]
+  codigofacilito> db.users.find();
+  [
+    {
+      _id: ObjectId("649e3a44b317d77bbe775379"),
+      username: 'user1',
+      age: 17,
+      email: 'user1@example.com'
+    },
+    {
+      _id: ObjectId("649e3b59b317d77bbe77537a"),
+      username: 'user2',
+      age: 19,
+      email: 'user2@gamil.com'
+    },
+    {
+      _id: ObjectId("649e3c44b317d77bbe77537b"),
+      username: 'user3',
+      age: 21,
+      email: 'user3@gamil.com'
+    },
+    {
+      _id: ObjectId("64c1d4135de2da20fbe39507"),
+      username: 'user4',
+      age: 45,
+      email: 'user4@example.com'
+    },
+    {
+      _id: ObjectId("64c1d58c5de2da20fbe39508"),
+      username: 'user5',
+      age: 60,
+      email: 'user4@example.com'
+    },
+    {
+      _id: ObjectId("64c1d58c5de2da20fbe39509"),
+      username: 'user6',
+      age: 11,
+      email: 'user4@example.com'
+    },
+    {
+      _id: ObjectId("64c1d58c5de2da20fbe3950a"),
+      username: 'user7',
+      age: 21,
+      email: 'user4@example.com'
+    },
+    {
+      _id: ObjectId("64c1d98f5de2da20fbe3950b"),
+      username: 'user8',
+      age: 56,
+      email: 'user@example.com'
+    },
+    {
+      _id: ObjectId("64c1db685de2da20fbe3950c"),
+      username: 'user9',
+      age: 23,
+      email: 'user9@example.com'
+    },
+    {
+      _id: ObjectId("64c1db685de2da20fbe3950d"),
+      username: 'user10',
+      age: 31,
+      email: 'user10@example.com'
+    },
+    {
+      _id: ObjectId("64c1db685de2da20fbe3950e"),
+      username: 'user11',
+      age: 8,
+      email: 'user11@example.com'
+    },
+    {
+      _id: ObjectId("64c1db685de2da20fbe3950f"),
+      username: 'user12',
+      age: 15,
+      email: 'user12@example.com',
+      status: 'inactive'
+    },
+    {
+      _id: ObjectId("64f945c7dcd8aa271ae472cf"),
+      username: 'user13',
+      age: 23,
+      email: 'user13@gmail.com'
+    },
+    {
+      _id: ObjectId("64f945c7dcd8aa271ae472d0"),
+      username: 'user14',
+      age: 31,
+      email: 'user14@gmail.com'
+    },
+    {
+      _id: ObjectId("64f945c7dcd8aa271ae472d1"),
+      username: 'user15',
+      age: 8,
+      email: 'user15@gmail.com',
+      status: 'inactive'
+    },
+    {
+      _id: ObjectId("64f945c7dcd8aa271ae472d2"),
+      username: 'user16',
+      age: 15,
+      email: 'user15@gmail.com',
+      status: 'active'
+    },
+    {
+      _id: ObjectId("64f945c7dcd8aa271ae472d3"),
+      username: 'user17',
+      age: 23,
+      email: 'user17@gmail.com'
+    },
+    {
+      _id: ObjectId("64f945c7dcd8aa271ae472d4"),
+      username: 'user18',
+      age: 31,
+      email: 'user18@gmail.com'
+    },
+    {
+      _id: ObjectId("64f945c7dcd8aa271ae472d5"),
+      username: 'user19',
+      age: 8,
+      email: 'user19@gmail.com',
+      status: 'inactive'
+    },
+    {
+      _id: ObjectId("64f945c7dcd8aa271ae472d6"),
+      username: 'user20',
+      age: 15,
+      email: 'user20@gmail.com',
+      status: 'active'
+    }
+  ]
