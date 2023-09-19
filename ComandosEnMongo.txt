@@ -1,0 +1,51 @@
+Comandos para recordar
+
+Para abrir mongo se tiene que ir a la ruta donde se encuentra el documento de la shell de mongo en este caso es el siguiente:
+C:\Program Files\MongoDB\Server\6.0\bin
+
+Despues se tiene que aplicar el comando ->mongod
+
+Luego se abre otra terminal con la misma ruta:C:\Program Files\MongoDB\Server\6.0\bin
+
+Y aplicar el comando ->mongosh
+Ese comando dara lo siguiente
+>test #Ya se abrio el servido para mongodb
+
+use baseDato ;#Crea la base de datos baseDato y si ya esta creado se selecciona
+
+show dbs; #Muestra las bases de datos
+
+db.createCollection("nombre_de_la_coleccion");#Comando para crear una coleccion
+
+db.blog.update({"_id": ObjectId("64a4e57af5c391bec67261e9"},{$set:{titulo:"Cambia"}});#Ejemplo para actualizar un documento a una coleccion
+
+show collections;#Muestra las colecciones en la base de datos 
+
+db.blog.find(); #Muestra los documentos en la coleccion de blog 
+
+db.blog.drop(); #Elimina la coleccion blog
+db.nombre_de_la_colección.insertMany([
+  {
+    campo1: valor1,
+    campo2: valor2,
+    // Agrega otros campos y valores para el primer documento
+  },
+  {
+    campo1: valor3,
+    campo2: valor4,
+    // Agrega otros campos y valores para el segundo documento
+  },
+  // Agrega más documentos según sea necesario
+])
+Nuevamente, reemplaza nombre_de_la_colección con el nombre de la colección en la que deseas insertar los documentos. Puedes proporcionar una matriz de objetos, donde cada objeto representa un documento con sus campos y valores correspondientes.
+
+Ten en cuenta que, en estos ejemplos, se asume que ya estás conectado a la base de datos de MongoDB y que has seleccionado la base de datos y la colección adecuadas usando los comandos use y db.collectionName. Asegúrate de tener permisos adecuados para insertar datos en la colección especificada.
+
+$eq: Igual a
+$ne: No igual a
+$gt: Mayor que
+$gte: Mayor o igual que
+$lt: Menor que
+$lte: Menor o igual que
+$in: Pertenece a un conjunto
+$nin: No pertenece a un conjunto
