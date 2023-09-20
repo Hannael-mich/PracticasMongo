@@ -17,13 +17,18 @@ show dbs; #Muestra las bases de datos
 
 db.createCollection("nombre_de_la_coleccion");#Comando para crear una coleccion
 
-db.blog.update({"_id": ObjectId("64a4e57af5c391bec67261e9"},{$set:{titulo:"Cambia"}});#Ejemplo para actualizar un documento a una coleccion
+db.blog.update({"_id": ObjectId("64a4e57af5c391bec67261e9")},{$set:{titulo:"Cambia"}});#Ejemplo para actualizar un documento a una coleccion
+
+db.products.update({ _id: ObjectId("51e6681a2b7e6dab80c1ebd6")},{$unset:{descripcion:1}})#La consulta es bastante similar a la que utilizabamos antes,
+#pero en este caso $unset recibe como parámetro el nombre del campo y un 1 indicando que este campo debe eliminarse del documento. 
+#Si ejecutamos un find para ver el resultado, encontramos que el campo descripción ya no existe.
 
 show collections;#Muestra las colecciones en la base de datos 
 
 db.blog.find(); #Muestra los documentos en la coleccion de blog 
 
 db.blog.drop(); #Elimina la coleccion blog
+db.users.deleteOne({ "name": "John Doe" })//Eliminacion de un archivo
 db.nombre_de_la_colección.insertMany([
   {
     campo1: valor1,
@@ -49,3 +54,7 @@ $lt: Menor que
 $lte: Menor o igual que
 $in: Pertenece a un conjunto
 $nin: No pertenece a un conjunto
+
+db.users.find().forEach(user=>print(user.username));//Muestra una lista de los nombres de usuario
+//forEach es un iteracion 
+//user es como la creacion de una instancia se puede utilizar otro nombre el . es el atributo
